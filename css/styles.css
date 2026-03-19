@@ -6,7 +6,7 @@ font-family:Arial, sans-serif;
 }
 
 body{
-background:#1e293b;
+background:#0f172a;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -14,23 +14,48 @@ height:100vh;
 }
 
 .app{
-width:350px;
-background:#fff;
+width:360px;
+background:#ffffff;
 border-radius:20px;
 padding:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
-header{
+.header{
 text-align:center;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
-header h1{
-color:#1e293b;
+.header h1{
+color:#0f172a;
 }
 
-.pantalla{
+.header p{
+font-size:14px;
+color:#555;
+}
+
+.perfil{
+text-align:center;
+margin-bottom:10px;
+}
+
+.menu{
+display:flex;
+justify-content:space-around;
+margin:10px 0;
+}
+
+.menu button{
+padding:8px;
+border:none;
+border-radius:10px;
+background:#3b82f6;
+color:white;
+cursor:pointer;
+}
+
+.seccion{
 display:none;
 }
 
@@ -38,23 +63,17 @@ display:none;
 display:block;
 }
 
-.tarjeta{
-text-align:center;
+.card{
 background:#f1f5f9;
 padding:15px;
+margin:10px 0;
 border-radius:15px;
-}
-
-.tarjeta img{
-width:100%;
-border-radius:10px;
-margin-bottom:10px;
+text-align:center;
 }
 
 button{
-display:block;
 width:100%;
-margin:10px 0;
+margin-top:5px;
 padding:10px;
 border:none;
 border-radius:10px;
@@ -65,4 +84,19 @@ cursor:pointer;
 
 button:hover{
 background:#1d4ed8;
+}
+
+.volver{
+background:#ef4444;
+}
+
+.volver:hover{
+background:#dc2626;
+}
+
+.footer{
+display:flex;
+justify-content:space-around;
+margin-top:10px;
+font-size:20px;
 }
