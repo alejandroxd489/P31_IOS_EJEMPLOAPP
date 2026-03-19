@@ -11,40 +11,76 @@
 
 <div class="app">
 
-<header>
+<header class="header">
 <h1>Cafetería Escolar</h1>
+<p>Práctica 2 - Sub 2</p>
 </header>
 
-<section id="menu" class="pantalla activa">
+<section class="perfil">
+<h2>Alumno</h2>
+<p>Tu Nombre Aquí</p>
+</section>
 
-<div class="tarjeta">
-<img src="img/cafeteria.png" alt="cafeteria">
-<h2>Menú</h2>
-<button onclick="mostrarSeccion('comida')">Ver comida</button>
-<button onclick="mostrarSeccion('bebidas')">Ver bebidas</button>
+<nav class="menu">
+<button onclick="mostrarSeccion('inicio')">Inicio</button>
+<button onclick="mostrarSeccion('menu-comida')">Menú</button>
+<button onclick="mostrarSeccion('contacto')">Contacto</button>
+</nav>
+
+<main>
+
+<!-- INICIO -->
+<section id="inicio" class="seccion activa">
+<h2>Bienvenido</h2>
+<p>Esta app muestra información básica de una cafetería escolar.</p>
+
+<div class="card">
+<h3>Horario</h3>
+<p>Lunes a Viernes</p>
+<p>8:00 am a 2:00 pm</p>
+</div>
+</section>
+
+<!-- MENU -->
+<section id="menu-comida" class="seccion">
+<h2>Menú del día</h2>
+
+<div class="card">
+<h3>Tacos</h3>
+<p>$25</p>
+</div>
+
+<div class="card">
+<h3>Hamburguesa</h3>
+<p>$40</p>
+</div>
+
+<div class="card">
+<h3>Agua fresca</h3>
+<p>$15</p>
 </div>
 
 </section>
 
-<section id="comida" class="pantalla">
+<!-- CONTACTO -->
+<section id="contacto" class="seccion">
+<h2>Contacto</h2>
 
-<div class="tarjeta">
-<h2>Comida</h2>
-<p>Tacos, tortas, sandwiches</p>
-<button onclick="volver()">Regresar</button>
+<div class="card">
+<p>Encargado: María López</p>
+<p>Ubicación: Edificio A</p>
+<p>Teléfono: 722 000 0000</p>
 </div>
 
 </section>
 
-<section id="bebidas" class="pantalla">
+</main>
 
-<div class="tarjeta">
-<h2>Bebidas</h2>
-<p>Agua, jugos, refrescos</p>
-<button onclick="volver()">Regresar</button>
-</div>
-
-</section>
+<footer class="footer">
+<span>🍔</span>
+<span>🥤</span>
+<span>📞</span>
+</footer>
 
 </div>
 
