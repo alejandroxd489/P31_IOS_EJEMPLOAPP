@@ -12,7 +12,7 @@
 <div class="app">
 
 <header class="header">
-<h1>Cafetería Escolar</h1>
+<h1>☕ Cafetería Escolar</h1>
 <p>Práctica 2 - Sub 2</p>
 </header>
 
@@ -22,9 +22,9 @@
 </section>
 
 <nav class="menu">
-<button onclick="mostrarSeccion('inicio')">Inicio</button>
-<button onclick="mostrarSeccion('menu-comida')">Menú</button>
-<button onclick="mostrarSeccion('contacto')">Contacto</button>
+<button onclick="mostrarSeccion('inicio')">🏠 Inicio</button>
+<button onclick="mostrarSeccion('menu-comida')">🍔 Menú</button>
+<button onclick="mostrarSeccion('contacto')">📞 Contacto</button>
 </nav>
 
 <main>
@@ -46,20 +46,24 @@
 <h2>Menú del día</h2>
 
 <div class="card">
-<h3>Tacos</h3>
+<h3>🌮 Tacos</h3>
 <p>$25</p>
+<button onclick="comprar('Tacos',25)">Comprar</button>
 </div>
 
 <div class="card">
-<h3>Hamburguesa</h3>
+<h3>🍔 Hamburguesa</h3>
 <p>$40</p>
+<button onclick="comprar('Hamburguesa',40)">Comprar</button>
 </div>
 
 <div class="card">
-<h3>Agua fresca</h3>
+<h3>🥤 Agua fresca</h3>
 <p>$15</p>
+<button onclick="comprar('Agua fresca',15)">Comprar</button>
 </div>
 
+<button class="volver" onclick="mostrarSeccion('inicio')">⬅ Volver</button>
 </section>
 
 <!-- CONTACTO -->
@@ -71,6 +75,8 @@
 <p>Ubicación: Edificio A</p>
 <p>Teléfono: 722 000 0000</p>
 </div>
+
+<button class="volver" onclick="mostrarSeccion('inicio')">⬅ Volver</button>
 
 </section>
 
